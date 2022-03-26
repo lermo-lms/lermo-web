@@ -1,0 +1,29 @@
+const actions = {
+  GET_CLASSROOMS_REQUEST: 'classroom/GET_CLASSROOMS_REQUEST',
+  GET_CLASSROOMS_SUCCESS: 'classroom/GET_CLASSROOMS_SUCCESS',
+  GET_CLASSROOMS_ERROR: 'classroom/GET_CLASSROOMS_ERROR',
+
+  CREATE_CLASSROOM_REQUEST: 'classroom/CREATE_CLASSROOM_REQUEST',
+  CREATE_CLASSROOM_SUCCESS: 'classroom/CREATE_CLASSROOM_SUCCESS',
+  CREATE_CLASSROOM_ERROR: 'classroom/CREATE_CLASSROOM_ERROR',
+
+  GET_CLASSROOM_DETAIL_REQUEST: 'classroom/GET_CLASSROOM_DETAIL_REQUEST',
+  GET_CLASSROOM_DETAIL_SUCCESS: 'classroom/GET_CLASSROOM_DETAIL_SUCCESS',
+  GET_CLASSROOM_DETAIL_ERROR: 'classroom/GET_CLASSROOM_DETAIL_ERROR',
+
+  get_classrooms: () => ({
+    type: actions.GET_CLASSROOMS_REQUEST,
+  }),
+
+  create_classroom: (form) => ({
+    type: actions.CREATE_CLASSROOM_REQUEST,
+    form,
+  }),
+
+  get_classroom_detail: (id) => ({
+    type: actions.GET_CLASSROOM_DETAIL_REQUEST,
+    id,
+  }),
+};
+
+export default actions;
